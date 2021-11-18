@@ -16,29 +16,28 @@ using System.Windows.Shapes;
 namespace ESoft
 {
     /// <summary>
-    /// Логика взаимодействия для Object.xaml
+    /// Логика взаимодействия для Buttons.xaml
     /// </summary>
-    public partial class Object : Page
+    public partial class Buttons : Page
     {
-        public Object()
+        public Buttons()
         {
             InitializeComponent();
-            gridData.ItemsSource = RealEstateAgencyEntities2.GetContext().houses.ToList();
         }
 
-        private void addHouse_Click(object sender, RoutedEventArgs e)
+        private void ClientBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.frame.Navigate(new CrudClients());
         }
 
-        private void insertHouse_Click(object sender, RoutedEventArgs e)
+        private void RieltorBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.frame.Navigate(new AddRealtor());
         }
 
-        private void delete_Click(object sender, RoutedEventArgs e)
+        private void ObjectBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.frame.Navigate(new Object());
         }
     }
 }

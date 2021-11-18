@@ -26,3 +26,9 @@ W:\Практика\Programms\ESoft\ESoft\obj\Debug\CrudClients.g.cs
 W:\Практика\Programms\ESoft\ESoft\obj\Debug\CrudClients.baml
 W:\Практика\Programms\ESoft\ESoft\obj\Debug\Object.g.cs
 W:\Практика\Programms\ESoft\ESoft\obj\Debug\Object.baml
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\AddClients.g.cs
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\Buttons.g.cs
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\AddClients.baml
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\Buttons.baml
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\UpdateClients.g.cs
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\UpdateClients.baml

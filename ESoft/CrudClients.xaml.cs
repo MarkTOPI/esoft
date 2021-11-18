@@ -20,61 +20,26 @@ namespace ESoft
     /// </summary>
     public partial class CrudClients : Page
     {
-
-        RealEstateAgencyEntities1 db = new RealEstateAgencyEntities1();
+        RealEstateAgencyEntities2 db = new RealEstateAgencyEntities2();
         public static DataGrid datagrid;
 
-        private void Load()
-        {
-            gridData.ItemsSource = db.clients.ToList();
-            datagrid = gridData;
-        }
+        public clients clients = new clients();
 
         public CrudClients()
         {
             InitializeComponent();
-            //gridData.ItemsSource = RealEstateAgencyEntities1.GetContext().clients.ToList();
-            Load();
+            DataContext = clients;
+            gridData.ItemsSource = RealEstateAgencyEntities2.GetContext().clients.ToList();
         }
 
         private void addClients_Click(object sender, RoutedEventArgs e)
         {
-            if ((PhoneTxt.Text != "" && EmailTxt.Text == "") || (PhoneTxt.Text == "" && EmailTxt.Text != "") || (PhoneTxt.Text != "" && EmailTxt.Text != ""))
-            {
-                MessageBox.Show("Пользователь добавлен");
-                RealEstateAgencyEntities1.GetContext().SaveChanges();
-            } else
-            {
-                MessageBox.Show("Пользователь не добавлен");
-            }
-
-            clients newClients = new clients()
-            {
-                FirstName = FirstNameTxt.Text,
-                MiddleName = MiddleNameTxt.Text,
-                LastName = LastNameTxt.Text,
-                Phone = PhoneTxt.Text,
-                Email = EmailTxt.Text
-            };
-
-            db.clients.Add(newClients);
-            db.SaveChanges();
-            datagrid.ItemsSource = db.clients.ToList();
-
+            Manager.frame.Navigate(new AddClients());
         }
 
         private void insertClients_Click(object sender, RoutedEventArgs e)
         {
-            if ((PhoneTxt.Text != "" && EmailTxt.Text == "") || (PhoneTxt.Text == "" && EmailTxt.Text != "") || (PhoneTxt.Text != "" && EmailTxt.Text != ""))
-            {
-                MessageBox.Show("Пользователь добавлен");
-                RealEstateAgencyEntities1.GetContext().SaveChanges();
-            }
-            else
-            {
-                MessageBox.Show("Пользователь не добавлен");
-            }
-
+            Manager.frame.Navigate(new UpdateClients());
         }
 
         private void deleteClients_Click(object sender, RoutedEventArgs e)
@@ -86,16 +51,24 @@ namespace ESoft
             {
                 try
                 {
-                    RealEstateAgencyEntities1.GetContext().clients.RemoveRange(clientRemoving);
-                    RealEstateAgencyEntities1.GetContext().SaveChanges();
+                    RealEstateAgencyEntities2.GetContext().clients.RemoveRange(clientRemoving);
+                    RealEstateAgencyEntities2.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены");
 
-                    gridData.ItemsSource = RealEstateAgencyEntities1.GetContext().clients.ToList();
+                    gridData.ItemsSource = RealEstateAgencyEntities2.GetContext().clients.ToList();
                 }
-                catch(Exception ex) {
+                catch (Exception ex)
+                {
                     MessageBox.Show(ex.Message.ToString());
                 }
             }
+
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            db = new RealEstateAgencyEntities2();
+            gridData.ItemsSource = db.clients.ToList();
         }
     }
 }

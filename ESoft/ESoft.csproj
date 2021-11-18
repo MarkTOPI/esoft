@@ -64,6 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddClients.xaml.cs">
+      <DependentUpon>AddClients.xaml</DependentUpon>
+    </Compile>
     <Compile Include="agents.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
@@ -72,6 +75,9 @@
     </Compile>
     <Compile Include="apartments_demands.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Buttons.xaml.cs">
+      <DependentUpon>Buttons.xaml</DependentUpon>
     </Compile>
     <Compile Include="clients.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
@@ -128,6 +134,17 @@
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
+    <Compile Include="UpdateClients.xaml.cs">
+      <DependentUpon>UpdateClients.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddClients.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CrudClients.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -155,6 +172,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Object.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateClients.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

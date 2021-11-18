@@ -15,13 +15,11 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
         <TextBlock Text="ESoft" FontSize="30px" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0"/>
         <Button x:Name="BackBtn" Content="Назад" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" FontSize="20px" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent" Click="BackBtn_Click"/>
-        <Button x:Name="ClientBtn" Content="Клиент" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" FontSize="20px" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent" Click="ClientBtn_Click"/>
-        <Button x:Name="RieltorBtn" Content="Риэлтор" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" FontSize="20px" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent" Click="RieltorBtn_Click"/>
-        <Button x:Name="ObjectBtn" Content="Объект" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" FontSize="20px" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent" Click="ObjectBtn_Click"/>
+        <Button x:Name="Information" Content="Продолжить" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" FontSize="20px" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent" Click="Information_Click"/>
         <Frame x:Name="frameMain" ContentRendered="frameMain_ContentRendered_1" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

@@ -381,7 +381,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="RealEstateAgencyEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="RealEstateAgencyEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="agents" EntityType="Self.agents" />
     <EntitySet Name="apartments" EntityType="Self.apartments" />
     <EntitySet Name="apartments_demands" EntityType="Self.apartments_demands" />

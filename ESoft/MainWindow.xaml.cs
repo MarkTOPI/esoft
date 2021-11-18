@@ -31,16 +31,6 @@ namespace ESoft
             Manager.frame.GoBack();
         }
 
-        private void ClientBtn_Click(object sender, RoutedEventArgs e)
-        {
-            frameMain.Navigate(new CrudClients());
-        }
-
-        private void RieltorBtn_Click(object sender, RoutedEventArgs e)
-        {
-            frameMain.Navigate(new AddRealtor());
-        }
-
         private void frameMain_ContentRendered_1(object sender, EventArgs e)
         {
             if (frameMain.CanGoBack)
@@ -53,9 +43,9 @@ namespace ESoft
             }
         }
 
-        private void ObjectBtn_Click(object sender, RoutedEventArgs e)
+        private void Information_Click(object sender, RoutedEventArgs e)
         {
-            frameMain.Navigate(new Object());
+            Manager.frame.Navigate(new Buttons());
         }
     }
 }

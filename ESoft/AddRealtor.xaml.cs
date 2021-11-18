@@ -27,7 +27,7 @@ namespace ESoft
         {
             InitializeComponent();
             DataContext = clients;
-            gridData.ItemsSource = RealEstateAgencyEntities1.GetContext().clients.ToList();
+            gridData.ItemsSource = RealEstateAgencyEntities2.GetContext().clients.ToList();
         }
 
         private void addClients_Click(object sender, RoutedEventArgs e)
