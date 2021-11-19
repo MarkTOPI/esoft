@@ -39,7 +39,7 @@ namespace ESoft
 
         private void insertClients_Click(object sender, RoutedEventArgs e)
         {
-            Manager.frame.Navigate(new UpdateClients());
+            Manager.frame.Navigate(new UpdateClients((sender as Button).DataContext as clients));
         }
 
         private void deleteClients_Click(object sender, RoutedEventArgs e)

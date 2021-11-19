@@ -16,7 +16,6 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -27,19 +26,17 @@
             <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="#00A68F"></Grid>
             <Grid Grid.Column="0" Grid.RowSpan="7" Background="#00A68F"></Grid>
             <TextBlock Text="Клиент" Grid.Row="0" Grid.Column="1" FontSize="24px" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <TextBlock Text="Id" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
-            <TextBlock Text="Фамилия" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
-            <TextBlock Text="Имя" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
-            <TextBlock Text="Отчество" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
-            <TextBlock Text="Телефон" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
-            <TextBlock Text="E-Mail" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
+            <TextBlock Text="Фамилия" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
+            <TextBlock Text="Имя" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
+            <TextBlock Text="Отчество" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
+            <TextBlock Text="Телефон" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
+            <TextBlock Text="E-Mail" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
 
-            <TextBox x:Name="IdTxt" Grid.Row="1" Grid.Column="1" Height="30px" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#04A0FF"/>
-            <TextBox x:Name="FirstNameTxt" Grid.Row="2" Grid.Column="1" Height="30px" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#04A0FF"/>
-            <TextBox x:Name="MiddleNameTxt" Grid.Row="3" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <TextBox x:Name="LastNameTxt" Grid.Row="4" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <TextBox x:Name="PhoneTxt" Grid.Row="5" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <TextBox x:Name="EmailTxt" Grid.Row="6" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBox x:Name="FirstNameTxt" Text="{Binding FirstName}" Grid.Row="1" Grid.Column="1"  Height="30px" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#04A0FF"/>
+            <TextBox x:Name="MiddleNameTxt" Text="{Binding MiddleName}" Grid.Row="2" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBox x:Name="LastNameTxt" Text="{Binding LastName}" Grid.Row="3" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBox x:Name="PhoneTxt" Text="{Binding Phone}" Grid.Row="4" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBox x:Name="EmailTxt" Text="{Binding Email}" Grid.Row="5" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
             <Button x:Name="insertClients" Content="Изменить" HorizontalAlignment="Center" VerticalAlignment="Center" 
                 Grid.Column="1" Grid.Row="7" Width="150px" Height="30px" Background="#0081D1"

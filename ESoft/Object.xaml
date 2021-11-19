@@ -5,35 +5,21 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ESoft"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="700"
       Title="Object">
 
     <Grid Background="Snow">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="6*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="#00A68F"></Grid>
-        <Grid Grid.Column="0" Grid.RowSpan="6" Background="#00A68F"></Grid>
+        <Grid Grid.Column="0" Background="#00A68F"></Grid>
         <TextBlock Text="Изменение недвижимости" Grid.Row="0" Grid.Column="1" FontSize="24px" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBlock Text="Город" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
-        <TextBlock Text="Улица" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
-        <TextBlock Text="Номер дома" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
-        <TextBlock Text="Номер квартиры" TextWrapping="Wrap" Grid.Row="4" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
-
-        <TextBox x:Name="City" Grid.Row="1" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Margin="52,15,461,15"/>
-        <TextBox x:Name="Street" Grid.Row="2" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Margin="52,15,461,15"/>
-        <TextBox x:Name="HouseNumber" Grid.Row="3" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Margin="52,15,461,15"/>
-        <TextBox x:Name="ApartmentNumber" Grid.Row="4" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Margin="52,15,461,15"/>
 
         <Button x:Name="addHouse" Content="Создать" HorizontalAlignment="Left" VerticalAlignment="Center" 
                 Grid.Column="1" Grid.Row="6" Width="150px" Height="30px" Background="#0081D1" Margin="20 0 0 0" 
@@ -47,13 +33,14 @@
                 Grid.Column="1" Grid.Row="6" Width="150px" Height="30px" Background="#0081D1" Margin="0 0 20 0" 
                 BorderBrush="Transparent" FontSize="16px" FontWeight="Bold" Click="delete_Click"/>
 
-        <DataGrid Grid.Column="1" x:Name="gridData" AutoGenerateColumns="False" IsReadOnly="True" Margin="243,11,10,10" Grid.Row="1" Grid.RowSpan="5" Width="Auto">
+        <DataGrid x:Name="gridData" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="1">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding = "{Binding Path=Id}" Width="20"></DataGridTextColumn>
-                <DataGridTextColumn Header="Город" Binding = "{Binding Path=Address_City}" Width="100"></DataGridTextColumn>
-                <DataGridTextColumn Header="Улица" Binding = "{Binding Path=Address_Street}" Width="100"></DataGridTextColumn>
-                <DataGridTextColumn Header="Номер дома" Binding = "{Binding Path=Address_House}" Width="100"></DataGridTextColumn>
-                <DataGridTextColumn Header="Номер квартиры" Binding = "{Binding Path=Address_Number}" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Header="Название" Binding = "{Binding Path=Name}" Width="110"></DataGridTextColumn>
+                <DataGridTextColumn Header="Координаты" Binding = "{Binding Path=Coordinates}" Width="110"></DataGridTextColumn>
+                <DataGridTextColumn Header="Город" Binding = "{Binding Path=Addres_City}" Width="110"></DataGridTextColumn>
+                <DataGridTextColumn Header="Улица" Binding = "{Binding Path=Address_Street}" Width="110"></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер дома" Binding = "{Binding Path=Address_house}" Width="110"></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер квартиры" Binding = "{Binding Path=Address_number}" Width="110"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

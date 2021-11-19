@@ -67,6 +67,9 @@
     <Compile Include="AddClients.xaml.cs">
       <DependentUpon>AddClients.xaml</DependentUpon>
     </Compile>
+    <Compile Include="addObject.xaml.cs">
+      <DependentUpon>addObject.xaml</DependentUpon>
+    </Compile>
     <Compile Include="agents.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
@@ -98,6 +101,9 @@
     <Compile Include="house_demands.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
+    <Compile Include="InsertRieltor.xaml.cs">
+      <DependentUpon>InsertRieltor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="lands.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
@@ -118,6 +124,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelData.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NewRieltor.xaml.cs">
+      <DependentUpon>NewRieltor.xaml</DependentUpon>
     </Compile>
     <Compile Include="Object.xaml.cs">
       <DependentUpon>Object.xaml</DependentUpon>
@@ -141,6 +150,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="addObject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Buttons.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -150,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddRealtor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InsertRieltor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,6 +188,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NewRieltor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Object.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

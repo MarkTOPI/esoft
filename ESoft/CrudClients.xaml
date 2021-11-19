@@ -24,7 +24,7 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="#00A68F"></Grid>
         <Grid Grid.Column="0" Grid.RowSpan="6" Background="#00A68F"></Grid>
-        <TextBlock Text="Изменение клиента" Grid.Row="0" Grid.Column="1" FontSize="24px" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="Клиент" Grid.Row="0" Grid.Column="1" FontSize="24px" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
         <Button x:Name="addClients" Content="Создать" HorizontalAlignment="Left" VerticalAlignment="Center" 
                 Grid.Column="1" Grid.Row="6" Width="150px" Height="30px" Background="#0081D1" Margin="20 0 0 0" 

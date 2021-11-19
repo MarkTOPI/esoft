@@ -21,24 +21,19 @@ namespace ESoft
     public partial class UpdateClients : Page
     {
 
-        RealEstateAgencyEntities2 db = new RealEstateAgencyEntities2();
+        private clients _currentClient = new clients();
 
-        public UpdateClients()
+        public UpdateClients(clients clients)
         {
             InitializeComponent();
+            if (clients != null)
+                _currentClient = clients;
+            DataContext = _currentClient;
         }
 
         private void insertClients_Click(object sender, RoutedEventArgs e)
         {
-            int num = Convert.ToInt32(IdTxt.Text);
-            var uRow = db.clients.Where(c => c.Id == num).FirstOrDefault();
-            uRow.FirstName = FirstNameTxt.Text;
-            uRow.MiddleName = MiddleNameTxt.Text;
-            uRow.LastName = LastNameTxt.Text;
-            uRow.Email = EmailTxt.Text;
-            uRow.Phone = PhoneTxt.Text;
-            db.SaveChanges();
-            CrudClients.datagrid.ItemsSource = db.clients.ToList();
+            RealEstateAgencyEntities2.GetContext().SaveChanges();
             MessageBox.Show("Клиент успешно изменен");
         }
     }

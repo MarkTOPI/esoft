@@ -32,3 +32,9 @@ W:\Практика\Programms\ESoft\ESoft\obj\Debug\AddClients.baml
 W:\Практика\Programms\ESoft\ESoft\obj\Debug\Buttons.baml
 W:\Практика\Programms\ESoft\ESoft\obj\Debug\UpdateClients.g.cs
 W:\Практика\Programms\ESoft\ESoft\obj\Debug\UpdateClients.baml
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\NewRieltor.g.cs
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\NewRieltor.baml
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\InsertRieltor.g.cs
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\InsertRieltor.baml
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\addObject.g.cs
+W:\Практика\Programms\ESoft\ESoft\obj\Debug\addObject.baml

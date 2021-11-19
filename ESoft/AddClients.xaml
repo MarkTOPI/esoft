@@ -39,7 +39,7 @@
             <TextBox x:Name="EmailTxt" Grid.Row="5" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
             <Button x:Name="addClients" Content="Создать" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                Grid.Column="1" Grid.Row="6" Width="150px" Height="30px" Background="#0081D1" Margin="0 0 200 0" 
+                Grid.Column="1" Grid.Row="6" Width="150px" Height="30px" Background="#0081D1"
                 BorderBrush="Transparent" FontSize="16px" FontWeight="Bold" Click="addClients_Click"/>
 
         </Grid>

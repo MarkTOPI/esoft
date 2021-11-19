@@ -1,0 +1,44 @@
+﻿<Page x:Class="ESoft.addObject"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ESoft"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="addObject"
+      Background="Snow">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="#00A68F"></Grid>
+        <Grid Grid.Column="0" Grid.RowSpan="6" Background="#00A68F"></Grid>
+        <TextBlock Text="Добавление недвижимости" Grid.Row="0" Grid.Column="1" FontSize="24px" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="Город" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
+        <TextBlock Text="Улица" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
+        <TextBlock Text="Номер дома" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
+        <TextBlock Text="Номер квартиры" TextWrapping="Wrap" Grid.Row="4" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px" FontWeight="Bold"/>
+
+        <TextBox x:Name="City" Grid.Row="1" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox x:Name="Street" Grid.Row="2" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox x:Name="HouseNumber" Grid.Row="3" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox x:Name="ApartmentNumber" Grid.Row="4" Grid.Column="1" Height="30px" BorderBrush="#04A0FF" Width="450px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Button x:Name="addHouse" Content="Создать" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                Grid.Column="1" Grid.Row="6" Width="150px" Height="30px" Background="#0081D1" Margin="20 0 0 0" 
+                BorderBrush="Transparent" FontSize="16px" FontWeight="Bold" Click="addHouse_Click"/>
+
+    </Grid>
+</Page>

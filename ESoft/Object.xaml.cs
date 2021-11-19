@@ -23,12 +23,12 @@ namespace ESoft
         public Object()
         {
             InitializeComponent();
-            gridData.ItemsSource = RealEstateAgencyEntities2.GetContext().houses.ToList();
+            gridData.ItemsSource = RealEstateAgencyEntities2.GetContext().districts.ToList();
         }
 
         private void addHouse_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.frame.Navigate(new addObject());
         }
 
         private void insertHouse_Click(object sender, RoutedEventArgs e)
